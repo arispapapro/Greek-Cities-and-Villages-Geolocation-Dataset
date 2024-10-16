@@ -28,15 +28,21 @@ The dataset includes the following columns:
 
 - **`has_geolocation`**: A boolean value indicating whether the geolocation (latitude and longitude) is available for the specific entry.
 
+- **`settlement_type`**: The type of settlement based on the population:
+    - `"χωριό"` (village) for populations of 2,000 or fewer.
+    - `"κωμόπολη"` (small town) for populations greater than 2,000 and up to 10,000.
+    - `"πόλη"` (city) for populations greater than 10,000 and up to 100,000.
+    - `"μεγάλη_πόλη"` (large city) for populations greater than 100,000.
+
 ## Data Source
 
 The population data in this dataset is based on the latest demographic research conducted by the Hellenic Statistical Authority (ELSTAT) in 2021. Geolocation coordinates are derived from open geospatial data sources to provide accurate latitude and longitude for each location.
 
 ## Example Data
 
-| country | section        | region                              | sub_region                        | municipality    | city       | population | latitude  | longitude  | has_geolocation |
-|---------|----------------|-------------------------------------|-----------------------------------|-----------------|------------|------------|-----------|------------|----------------|
-| Greece  | Βορεια Ελλαδα  | Περιφερεια Κεντρικης Μακεδονιας     | Περιφερειακη Ενοτητα Πελλας       | Δημος Πελλας    | Γιαννιτσά  | 28,757     | 40.79304  | 22.411477  | true           |
+| country | section        | region                              | sub_region                        | municipality    | city       | population | latitude  | longitude  | has_geolocation | settlement_type |
+|---------|----------------|-------------------------------------|-----------------------------------|-----------------|------------|------------|-----------|------------|----------------|----------------|
+| Greece  | Βορεια Ελλαδα  | Περιφερεια Κεντρικης Μακεδονιας     | Περιφερειακη Ενοτητα Πελλας       | Δημος Πελλας    | Γιαννιτσά  | 28,757     | 40.79304  | 22.411477  | true           | πόλη           |
 
 ## Usage
 
