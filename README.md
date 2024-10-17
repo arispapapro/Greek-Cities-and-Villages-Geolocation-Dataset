@@ -38,6 +38,9 @@ The dataset includes the following columns:
 
 The population data in this dataset is based on the latest demographic research conducted by the Hellenic Statistical Authority (ELSTAT) in 2021. Geolocation coordinates are derived from open geospatial data sources to provide accurate latitude and longitude for each location.
 
+## Charts
+![alt text](https://github.com/arispapapro/Greek-Cities-and-Villages-Geolocation-Dataset/blob/main/charts/geographic-distribution-of-greek-settlements.png?raw=true)
+
 ## Example Data
 
 | country | section        | region                              | sub_region                        | municipality    | city       | population | latitude  | longitude  | has_geolocation | settlement_type |
